@@ -33,3 +33,13 @@ for {set i 0} {$i < 32} {incr i} {
 for {set i 2} {$i < 4} {incr i} {
 	set_unconnected rdata[$i]
 }
+
+######################################################
+#######            Set Area Constraint         #######
+######################################################
+
+## Optimize Area
+set_max_area 0
+
+## Check for unconstrained timing paths
+check_timing
